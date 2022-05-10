@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+:root{
+    --vermelho:#E50914;          
+    --preta: #141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: "Times New Roman", times, serif;
+    color: white;
+
+    
+}
+
+header .container{
+    font-family: 'Sarala', sans-serif;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial black', times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+    color:var(--vermelho);
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+
+}
+.dropbtn {
+    display: inline-block;
+    color: #AAA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown:hover .dropbtn {
+    color:#fff;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:var(--preta);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.filme-principal{
+    font-family: 'Sarala', sans-serif;
+    font-size: 16px;
+    background:linear-gradient(rgba(0, 0, 0, .50),rgb(0, 0, 0, .50)100%), url('../img/universo.jpg');
+    height: 425px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.avaliacao {
+    padding: 5px;
+}
+.filme-principal .descricao {
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.titulo{
+    margin: 5px;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(54, 53, 53, 0.644);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.box-filme{
+    position: relative;
+    padding: 4px;
+    height: 50%;
+    width: 50%;
+    display:block;
+    transition: all .2s ease-in-out;
+    background-color: rgb(7, 7, 7);
+}
+
+.box-filme:hover{
+    top:-7px;
+    box-shadow:0 7px 5px rgb(0, 0, 0);
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
+
+.carrosel-filme p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #141414;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.info{ 
+    display: none;
+    font-family: 'Sarala', sans-serif;
+}
+.item:hover .info, .itemdois:hover {
+    display: block;
+}
+
+.rodape {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.068);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+footer p{
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    margin: 10px;
+    gap: 20px ;
+}
